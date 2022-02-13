@@ -207,7 +207,7 @@ $val3 = mysqli_fetch_array($query3);
                         <br>Let's see what others say about Comptell Solutions website template!</p>
                 </div>
                 <!-- end title -->
-
+	<form method="POST" action="plans.php">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable" id="pricingtable1">
@@ -231,8 +231,8 @@ $val3 = mysqli_fetch_array($query3);
                                 <li class="disable">10 Subdomains</li>
                                 <li class="disable">15 Domains</li>
                             </ul>
-                            <a href="pricing.php?price=10" class="pricingTable-signup">Select the plan
-                            </a>
+                            <button  class="pricingTable-signup" type="submit" name ='basic'>Select the plan
+                            </button>
                         </div>
                     </div>
 
@@ -258,8 +258,8 @@ $val3 = mysqli_fetch_array($query3);
                                 <li>15 Subdomains</li>
                                 <li class="disable">20 Domains</li>
                             </ul>
-                            <a href="pricing.php?price=20" class="pricingTable-signup">Select the plan
-                            </a>
+                            <button name="business" type="submit" class="pricingTable-signup">Select the plan
+                            </button>
                         </div>
                     </div>
 
@@ -285,8 +285,8 @@ $val3 = mysqli_fetch_array($query3);
                                 <li>20 Subdomains</li>
                                 <li>25 Domains</li>
                             </ul>
-                            <a href="pricing.php?price=30" class="pricingTable-signup">Select the plan
-                            </a>
+                            <button name="premium" type="submit" class="pricingTable-signup">Select the plan
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -295,6 +295,7 @@ $val3 = mysqli_fetch_array($query3);
             <!-- end container -->
         </div>
         <!-- end section -->
+        </form>
 
         <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.jpg');">
             <div class="container">
