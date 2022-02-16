@@ -162,7 +162,7 @@ $val3 = mysqli_fetch_array($query3);
                                 <a href="testimonials.html">Testimonials</a>
                             </li>
                             <li>
-                                <a class="active" href="pricing.html">Pricing</a>
+                                <a class="active" href="pricing.php">Pricing</a>
                             </li>
                             <li>
                                 <a href="contact.html">Contact</a>
@@ -218,7 +218,7 @@ $val3 = mysqli_fetch_array($query3);
                             </div>
                             <div class="price-value">
                                 <div class="value">
-                                    <span class="currency">$</span>
+                                    <span class="currency">₹</span>
                                     <span class="amount"><?=$val1['price']; ?>
                                     </span>
                                     <span class="month">/month</span>
@@ -235,6 +235,8 @@ $val3 = mysqli_fetch_array($query3);
                             </button>
                         </div>
                     </div>
+    </form>
+	<form method="POST" action="plans.php">
 
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable purple" , id="pricingtable2">
@@ -245,7 +247,7 @@ $val3 = mysqli_fetch_array($query3);
                             </div>
                             <div class="price-value">
                                 <div class="value">
-                                    <span class="currency">$</span>
+                                    <span class="currency">₹</span>
                                     <span class="amount"><?=$val2['price']; ?>
                                     </span>
                                     <span class="month">/month</span>
@@ -258,10 +260,13 @@ $val3 = mysqli_fetch_array($query3);
                                 <li>15 Subdomains</li>
                                 <li class="disable">20 Domains</li>
                             </ul>
-                            <button name="business" type="submit" class="pricingTable-signup">Select the plan
+                            <button name="business" type="submit" class="pricingTable-signup"/>Select the plan
                             </button>
                         </div>
                     </div>
+
+    </form> 
+    <form method="POST" action="plans.php">
 
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable blue" id="pricingtable3">
@@ -272,7 +277,7 @@ $val3 = mysqli_fetch_array($query3);
                             </div>
                             <div class="price-value">
                                 <div class="value">
-                                    <span class="currency">$</span>
+                                    <span class="currency">₹</span>
                                     <span class="amount"><?=$val3['price']; ?>
                                     </span>
                                     <span class="month">/month</span>
@@ -289,6 +294,7 @@ $val3 = mysqli_fetch_array($query3);
                             </button>
                         </div>
                     </div>
+    </form>
                 </div>
                 <!-- end row -->
             </div>
